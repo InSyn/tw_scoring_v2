@@ -5,7 +5,7 @@ import router from './router';
 
 import App from './App.vue';
 
-import './styles/defaults.css';
+import './assets/styles/main.scss';
 
 createApp(App)
   .use(pinia)

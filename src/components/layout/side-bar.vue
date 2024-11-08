@@ -32,18 +32,20 @@ onUnmounted(() => {
   </nav>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .sideBar__wrapper {
   grid-area: sidebar;
   display: grid;
   grid-template-columns: 0fr;
   transition: grid-template-columns 120ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.sideBar__wrapper.opened {
-  grid-template-columns: 1fr;
-}
-.menu__wrapper {
-  overflow: hidden;
-  transition: width 200ms;
+
+  &.opened {
+    grid-template-columns: 1fr;
+  }
+  .menu__wrapper {
+    overflow: hidden;
+    transition: width 200ms;
+    border: 1px solid #3498db;
+  }
 }
 </style>
