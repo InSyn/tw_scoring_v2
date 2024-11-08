@@ -45,7 +45,6 @@ onUnmounted(() => {
   .menu__wrapper {
     overflow: hidden;
     transition: width 200ms;
-    border: 1px solid #3498db;
   }
 }
 </style>

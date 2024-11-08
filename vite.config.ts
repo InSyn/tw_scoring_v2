@@ -68,6 +68,13 @@ export default defineConfig(({ command }) => {
         '@': path.resolve(__dirname, 'src'),
       },
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@use "@/assets/styles/global.scss";`,
+        },
+      },
+    },
     server:
       process.env.VSCODE_DEBUG &&
       (() => {
